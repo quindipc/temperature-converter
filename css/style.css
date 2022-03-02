@@ -11,7 +11,7 @@
 /* LAYOUT
 /*******************************************/
 
-h1, h2, form{
+h1, form{
   text-align: center;
 }
 button{
@@ -32,12 +32,32 @@ li{
   height: 49px;
   border: 1px solid black;
 }
-h2{
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.app {
+  margin-top: 25em;
+  margin-left: 26em;
+}
+
+.celWrapper {
+  float:left;
+}
+
+#showCelsiusValue {
+  float:right;
   font-size: 100px;
   color: red;
   font-weight: bold;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+#showFahrenheitValue {
+  float:left;
+  font-size: 100px;
+  color: Blue;
+  font-weight: bold;
+}
+
+

@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Temperature Converter</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
+	<title>Temperature Converter</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="app">
+	<div class="celWrapper">
 		<form>
 			<label for="celsius">Celsius</label>
 			<input id="cel" type="text" placeholder="Celsius Value">
 		</form>
 
-		<button id="fahrenheit" type="button" name="button">Change to Fahrenheit</button>
+		<button id="fahrenheitBtn" type="button" name="button">Change to Fahrenheit</button>
 
-		<h2 id="showConvertedValue"></h2>
+	</div>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	<div class="fahWrapper">
+		<form>
+			<label for="fahrenheit">Fahrenheit</label>
+			<input id="fah" type="text" placeholder="Celsius Value">
+		</form>
+
+		<button id="celsiusBtn" type="button" name="button">Change to Fahrenheit</button>
+
+	</div>
+	<h2 id="showCelsiusValue"></h2>
+	<h2 id="showFahrenheitValue"></h2>
+
+</div>
+	
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
