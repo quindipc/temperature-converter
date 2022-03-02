@@ -27,10 +27,10 @@ document.querySelector('#celsiusBtn').addEventListener('click', convert)
 
 //when click happens, it will run based on these instructions in the function
 function convert() {
-    //need the value that is in celsius
+    //need the value that is in fahrenheit
     let temp = document.querySelector('#fah').value
-    //convert from celsius to fahrenheit
-    temp = temp * 9/5 + 32
+    //convert from fahrenheit to celsius
+    temp = temp - 32 * 5/9
     //show it
     document.querySelector('#showCelsiusValue').innerText = temp
 }
